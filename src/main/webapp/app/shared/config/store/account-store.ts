@@ -1,5 +1,8 @@
 import { Module } from 'vuex';
 
+// burger
+// beer
+
 export const accountStore: Module<any, any> = {
   state: {
     logon: false,

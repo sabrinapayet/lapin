@@ -1,0 +1,24 @@
+{
+  "lapin5App": {
+    "lapin": {
+      "home": {
+        "title": "Lapins",
+        "createLabel": "Create a new Lapin",
+        "createOrEditLabel": "Create or edit a Lapin",
+        "notFound": "No Lapins found"
+      },
+      "created": "A new Lapin is created with identifier {{ param }}",
+      "updated": "A Lapin is updated with identifier {{ param }}",
+      "deleted": "A Lapin is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Lapin {{ id }}?"
+      },
+      "detail": {
+        "title": "Lapin"
+      },
+      "created": "Created",
+      "modify": "Modify",
+      "deleted": "Deleted"
+    }
+  }
+}

@@ -21,6 +21,10 @@ import {
   BAlert,
   BModal,
   VBModal,
+  BTime,
+  BCalendar,
+  BFormDatepicker,
+  BFormTimepicker,
 } from 'bootstrap-vue';
 
 export function initBootstrapVue(vue) {
@@ -47,4 +51,8 @@ export function initBootstrapVue(vue) {
   vue.component('b-nav-item-dropdown', BNavItemDropdown);
   vue.component('b-modal', BModal);
   vue.directive('b-modal', VBModal);
+  vue.component('b-time', BTime);
+  vue.component('b-calendar', BCalendar);
+  vue.component('b-form-datepicker', BFormDatepicker);
+  vue.component('b-form-timepicker', BFormTimepicker);
 }

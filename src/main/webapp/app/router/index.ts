@@ -25,6 +25,12 @@ const JhiLogsComponent = () => import('../admin/logs/logs.vue');
 const JhiAuditsComponent = () => import('../admin/audits/audits.vue');
 const JhiMetricsComponent = () => import('../admin/metrics/metrics.vue');
 /* tslint:disable */
+// prettier-ignore
+const Lapin = () => import('../entities/lapin/lapin.vue');
+// prettier-ignore
+const LapinUpdate = () => import('../entities/lapin/lapin-update.vue');
+// prettier-ignore
+const LapinDetails = () => import('../entities/lapin/lapin-details.vue');
 // jhipster-needle-add-entity-to-router-import - JHipster will import entities to the router here
 
 Vue.use(Router);
@@ -141,6 +147,31 @@ export default new Router({
       name: 'JhiConfigurationComponent',
       component: JhiConfigurationComponent,
       meta: { authorities: [Authority.ADMIN] }
+    }
+    ,
+    {
+      path: '/lapin',
+      name: 'Lapin',
+      component: Lapin,
+      meta: { authorities: [Authority.USER] }
+    },
+    {
+      path: '/lapin/new',
+      name: 'LapinCreate',
+      component: LapinUpdate,
+      meta: { authorities: [Authority.USER] }
+    },
+    {
+      path: '/lapin/:lapinId/edit',
+      name: 'LapinEdit',
+      component: LapinUpdate,
+      meta: { authorities: [Authority.USER] }
+    },
+    {
+      path: '/lapin/:lapinId/view',
+      name: 'LapinView',
+      component: LapinDetails,
+      meta: { authorities: [Authority.USER] }
     }
     // jhipster-needle-add-entity-to-router - JHipster will add entities to the router here
   ]

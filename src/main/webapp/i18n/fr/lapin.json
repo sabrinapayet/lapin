@@ -1,0 +1,24 @@
+{
+  "lapin5App": {
+    "lapin": {
+      "home": {
+        "title": "Lapins",
+        "createLabel": "Créer un nouveau Lapin",
+        "createOrEditLabel": "Créer ou éditer un Lapin",
+        "notFound": "Aucun Lapin trouvé"
+      },
+      "created": "Un nouveau Lapin a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Lapin avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Lapin avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Lapin {{ id }} ?"
+      },
+      "detail": {
+        "title": "Lapin"
+      },
+      "created": "Created",
+      "modify": "Modify",
+      "deleted": "Deleted"
+    }
+  }
+}

@@ -42,12 +42,13 @@
     ],
     "enableTranslation": true,
     "nativeLanguage": "en",
-    "languages": ["en", "ca", "zh-cn", "nl"],
+    "languages": ["en", "ca", "zh-cn", "nl", "fr"],
     "blueprints": [
       {
         "name": "generator-jhipster-vuejs",
         "version": "1.7.0"
       }
-    ]
+    ],
+    "lastLiquibaseTimestamp": 1589731618000
   }
 }

@@ -8,6 +8,7 @@ export const translationStore: Module<any, any> = {
       'zh-cn': { name: '中文（简体）' },
       nl: { name: 'Nederlands' },
       en: { name: 'English' },
+      fr: { name: 'Français' },
       // jhipster-needle-i18n-language-key-pipe - JHipster will add/remove languages in this object
     },
   },

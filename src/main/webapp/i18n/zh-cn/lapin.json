@@ -1,0 +1,24 @@
+{
+  "lapin5App": {
+    "lapin": {
+      "home": {
+        "title": "Lapins",
+        "createLabel": "创建新 Lapin",
+        "createOrEditLabel": "创建或编辑 Lapin",
+        "notFound": "No Lapins found"
+      },
+      "created": "Lapin {{ param }} 创建成功",
+      "updated": "Lapin {{ param }} 更新成功",
+      "deleted": "Lapin {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 Lapin {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "Lapin"
+      },
+      "created": "Created",
+      "modify": "Modify",
+      "deleted": "Deleted"
+    }
+  }
+}
