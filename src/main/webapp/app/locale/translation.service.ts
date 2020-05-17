@@ -29,4 +29,8 @@ export default class TranslationService {
       this.store.commit('currentLanguage', currentLanguage);
     }
   }
+
+  public getCurrentLanguage(): any {
+    return this.store.getters.currentLanguage;
+  }
 }

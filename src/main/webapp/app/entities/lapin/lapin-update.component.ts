@@ -26,6 +26,7 @@ export default class LapinUpdate extends Vue {
   @Inject('lapinService') private lapinService: () => LapinService;
   public lapin: ILapin = new Lapin();
   public isSaving = false;
+  public currentLanguage = '';
 
   beforeRouteEnter(to, from, next) {
     next(vm => {
@@ -33,6 +34,15 @@ export default class LapinUpdate extends Vue {
         vm.retrieveLapin(to.params.lapinId);
       }
     });
+  }
+  public created() {
+    this.currentLanguage = this.$store.getters.currentLanguage;
+    this.$store.watch(
+      () => this.$store.getters.currentLanguage,
+      () => {
+        this.currentLanguage = this.$store.getters.currentLanguage;
+      }
+    );
   }
 
   public save(): void {
