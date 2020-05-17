@@ -25,6 +25,9 @@ import {
   BCalendar,
   BFormDatepicker,
   BFormTimepicker,
+  BInputGroup,
+  BInputGroupAppend,
+  BInputGroupPrepend,
 } from 'bootstrap-vue';
 
 export function initBootstrapVue(vue) {
@@ -55,4 +58,7 @@ export function initBootstrapVue(vue) {
   vue.component('b-calendar', BCalendar);
   vue.component('b-form-datepicker', BFormDatepicker);
   vue.component('b-form-timepicker', BFormTimepicker);
+  vue.component('b-input-group', BInputGroup);
+  vue.component('b-input-group-append', BInputGroupAppend);
+  vue.component('b-input-group-prepend', BInputGroupPrepend);
 }

@@ -10,17 +10,27 @@
           </div>
           <div>
             <label v-text="$t('lapin5App.lapin.created')" for="lapin-created">Created</label>
-            <b-form-datepicker
-              id="lapin-created"
-              v-model="$v.lapin.created.$model"
-              name="created"
-              :start-weekday="1"
-              class="mb-2"
-              :locale="currentLanguage"
-            >
-            </b-form-datepicker>
-            <p>Value: '{{ $v.lapin.created.$model }}'</p>
-            <p>Value: '{{ currentLanguage }}'</p>
+            <b-input-group class="mb-3">
+              <b-input-group-prepend>
+                <b-form-datepicker
+                  aria-controls="lapin-created"
+                  v-model="$v.lapin.created.$model"
+                  name="created"
+                  :start-weekday="1"
+                  class="mb-2"
+                  :locale="currentLanguage"
+                  button-only
+                >
+                </b-form-datepicker>
+              </b-input-group-prepend>
+              <b-form-input
+                id="lapin-created"
+                v-model="$v.lapin.created.$model"
+                type="text"
+                placeholder="YYYY-MM-DD"
+                autocomplete="off"
+              ></b-form-input>
+            </b-input-group>
           </div>
           <div class="form-group">
             <label class="form-control-label" v-text="$t('lapin5App.lapin.modify')" for="lapin-modify">Modify</label>
